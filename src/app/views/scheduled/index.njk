@@ -1,0 +1,9 @@
+{% for scheduledClient in scheduleds %}
+  <li class="client">
+    <div>
+      <img src="/files/{{ scheduledClient.Client.avatar }}" alt="">
+      <strong>{{ scheduledClient.Client.name }}</strong>
+      <strong>{{ scheduledClient.value }}</strong>
+    </div>
+  </li>
+{% endfor %}
